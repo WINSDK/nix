@@ -53,12 +53,12 @@ mod sched_linux_like {
             /// The child and the calling process share a single list of System
             /// V semaphore adjustment values
             CLONE_SYSVSEM;
-            // Not supported by Nix due to lack of varargs support in Rust FFI
-            // CLONE_SETTLS;
-            // Not supported by Nix due to lack of varargs support in Rust FFI
-            // CLONE_PARENT_SETTID;
-            // Not supported by Nix due to lack of varargs support in Rust FFI
-            // CLONE_CHILD_CLEARTID;
+            /// Not supported by Nix due to lack of varargs support in Rust FFI
+            CLONE_SETTLS;
+            /// Not supported by Nix due to lack of varargs support in Rust FFI
+            CLONE_PARENT_SETTID;
+            /// Not supported by Nix due to lack of varargs support in Rust FFI
+            CLONE_CHILD_CLEARTID;
             /// Unused since Linux 2.6.2
             #[deprecated(since = "0.23.0", note = "Deprecated by Linux 2.6.2")]
             CLONE_DETACHED;
