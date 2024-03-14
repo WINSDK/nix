@@ -81,6 +81,8 @@ mod sched_linux_like {
             CLONE_NEWNET;
             /// The new process shares an I/O context with the calling process.
             CLONE_IO;
+            /// The new process has it's own file descriptor identifier.
+            CLONE_PIDFD;
         }
     }
 
