@@ -65,8 +65,8 @@ mod sched_linux_like {
             /// A tracing process cannot force `CLONE_PTRACE` on this child
             /// process.
             CLONE_UNTRACED;
-            // Not supported by Nix due to lack of varargs support in Rust FFI
-            // CLONE_CHILD_SETTID;
+            /// Not supported by Nix due to lack of varargs support in Rust FFI
+            CLONE_CHILD_SETTID;
             /// Create the process in a new cgroup namespace.
             CLONE_NEWCGROUP;
             /// Create the process in a new UTS namespace.
